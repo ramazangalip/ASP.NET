@@ -1,0 +1,12 @@
+@model List<StoreApp.Models.Product>
+
+@section Footer{
+    <div>
+        Index Footer
+    </div>
+}
+
+@foreach (StoreApp.Models.Product prd in Model)
+{
+    <partial name="_ProductCard" model="@prd"/>
+}
